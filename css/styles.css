@@ -32,6 +32,16 @@ body::after{
     opacity: 0;
 }
 
+nav div.burgerNav-container{
+    opacity: 0;
+    width: 0;
+}
+
+nav div.verticalnav-container{
+    opacity: 1;
+    width: 100%;
+}
+
 nav{
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -132,3 +142,158 @@ section.ap-content {
     background-color: #ffffff;
     height: 1000px;
 }
+
+@media screen and (max-width: 1200px) {
+    span {
+        font-size: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    span {
+        font-size: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav div.burgerNav-container{
+        opacity: 1;
+        width: 100%;
+    }
+
+    nav ul {
+        height: 0px;
+    }
+    
+    nav div.verticalnav-container{
+        overflow: hidden;
+        opacity: 0;
+        width: 0;
+    }
+
+    nav .burguerNav{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav .burguerNav a{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    nav .burguerNav .burguer{
+        right: 15px;
+        top: 0px;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    nav .burguerNav .burguer .bar{
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: ease-in .3s;
+    }
+    
+    nav .burguerNav .burguer .up{
+        transform: translateY(-10px);
+    }
+    
+    nav .burguerNav .burguer .mid{
+        width: 25px;
+        opacity: 1;
+    }
+    
+    nav .burguerNav .burguer .down{
+        transform: translateY(10px);
+    }
+    
+    nav .burguerNav .burguer .up.active{
+        width: 30px;
+        transform: rotateZ(-45deg);
+    }
+    
+    nav .burguerNav .burguer .mid.active{
+        opacity: 0;
+    }
+    
+    nav .burguerNav .burguer .down.active{
+        width: 30px;
+        transform: rotateZ(45deg);
+    }
+    
+    nav .link{
+        overflow: hidden;
+        opacity: 0;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in-out .3s;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    }
+    
+    nav .link.active{
+        opacity: 1;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    nav .link a{
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        color: #ffffff;
+        transition: ease .3s;
+        padding: 1px 10px;
+        margin: 5px 1px;
+        position: relative;
+    }
+
+    nav .link a::after{
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 2px;
+        left: 50%;
+        bottom:0;
+        margin-top: 1px;
+        background-color: rgb(255, 255, 255);
+        transition: all ease-in-out .3s;
+    }
+    
+    nav .link a:hover::after{
+        width: 100%;
+        left: 0;
+    }
+    
+    
+    
+    body header div.main-content.active {
+        height: 71vh;
+    }
+        
+    span {
+        font-size: 200px;
+    }
+}
+
