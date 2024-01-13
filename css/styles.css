@@ -163,6 +163,9 @@ section.ap-content {
 }
 
 @media screen and (max-width: 480px) {
+    nav{
+        height: auto;
+    }
     nav div.burgerNav-container{
         opacity: 1;
         width: 100%;
