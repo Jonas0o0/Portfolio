@@ -37,12 +37,19 @@ nav div.burgerNav-container{
     width: 0;
 }
 
+nav .link{
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+}
+
 nav div.verticalnav-container{
     opacity: 1;
     width: 100%;
 }
 
 nav{
+    height: 50px;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
