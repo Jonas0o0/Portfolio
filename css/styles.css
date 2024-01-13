@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@font-face {
+    font-family: JFont;
+    src: url(../assets/Fonts/Thunder-VF.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+}
+
+body::after{
+    content: '';
+    height: 2px;
+    position: fixed;
+    top: calc(50% - 1px);
+    left: 0;
+    right: 0;
+    background-color: #892222;
+    z-index: 10;
+    opacity: 0;
+}
+
+nav{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #000000;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+nav ul {
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+  }
+
+nav ul li a{
+    padding: 0px 10px;
+    margin: 0px 10px;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    transition: all ease-in-out .2s;
+    border:none;
+    position: relative;
+}
+
+nav ul a::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    bottom:0;
+    margin-top: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: all ease-in-out .3s;
+}
+
+nav ul li:hover a:after{
+    width: 100%;
+    left: 0;
+}
+
+header div.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+header div.arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@keyframes arrowAnimation{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+header div.arrow a svg{
+    color: #fff;
+    animation: arrowAnimation 2s ease-in-out infinite;
+}
+
+span {
+    font-size: 500px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: JFont;
+}
+
+section.ap-content {
+    background-color: #ffffff;
+    height: 1000px;
+}
