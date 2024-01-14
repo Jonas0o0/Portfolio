@@ -20,7 +20,6 @@ body {
     background-color: #000000;
     color: #fff;
 }
-
 body::after{
     content: '';
     height: 2px;
@@ -351,6 +350,7 @@ section.Ap div.text-content {
 }
 
 section.SK {
+    overflow: hidden;
     width: 100%;
     display: flex;
     flex-direction: row;

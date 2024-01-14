@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="Js/index.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Jonas</title>
 </head>
 <body>
@@ -55,7 +56,7 @@
     </header>
     <section id="AP" class="Ap">
         <h1>A Propos</h1>
-        <div class="text-content">
+        <div data-aos="fade-up" class="text-content">
             <p>
                 Lycéen actuellement en terminale, je me passionne particulièrement pour les mathématiques et la NSI (Numérique et Sciences Informatiques), qui se distinguent comme mes deux matières préférées. Mon parcours académique est guidé par une soif de connaissances dans ces domaines, avec un accent particulier sur l'informatique.<br> <br>
 
@@ -64,12 +65,12 @@
         </div>
         </div>
     </section>
-    <section class="SK">
+    <section  data-aos="fade-up" class="SK">
         <div id="Skill" class="text-container">
             <h1>Skills</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic molestias cupiditate voluptatum consequuntur? Cumque aspernatur optio reprehenderit officia qui omnis beatae exercitationem, molestiae quas. Inventore et veritatis illum debitis.</p>
         </div>
-        <div id="SkillBox">
+        <div id="SkillBox" data-aos="fade-left">
             <center><p>My Skills</p></center>
             <img src="assets/Images/colombe.jpg" alt="Skill - Pawan Mall" />
             <div class="SkillBar">
@@ -132,5 +133,9 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum reiciendis corrupti quia aut cumque ullam labore sequi, veniam perspiciatis nihil odit porro tempore eaque dignissimos rerum id ea impedit assumenda.</p>
         
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
