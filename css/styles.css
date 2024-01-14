@@ -314,6 +314,12 @@ section.Ap {
     justify-content: flex-start;
 }
 
+section.Ap div.text-content {
+    font-family: 'Roboto', sans-serif;
+    
+    font-size: 20px;
+    width: 50%;
+}
 
 section.Ap  h1{
     margin: 200px 0px 50px 0px;
@@ -321,11 +327,6 @@ section.Ap  h1{
     font-style: italic;
     font-weight: bold;
     font-family: JFont;
-}
-
-section.Ap div.text-content {
-    font-family: 'Roboto', sans-serif;
-    width: 50%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -370,6 +371,7 @@ section.SK div.text-container{
     justify-content: center;
     align-items: stretch;
     margin-bottom: auto;
+    font-size: 20px;
 }
 
 section.SK div.text-container h1{
@@ -404,8 +406,13 @@ section.SK div.text-container h1{
     width: 90%;
     height: 50px;
     position: relative;
-    background: rgba(17, 17, 17, .3);
+    background: rgba(17, 17, 17, 0.092);
     margin: 20px auto;
+}
+
+.SkillBar, .SkillBar div{
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    border-radius: 3px;
 }
 
 #Skill-PYTHON {
@@ -431,10 +438,10 @@ section.SK div.text-container h1{
 }
 
 #Skill-CSS {
-    animation: Animate80 5s;
-    -webkit-animation: Animate80 5s;
-    -moz-animation: Animate80 5s;
-    -o-animation: Animate80 5s;
+    animation: Animate90 5s;
+    -webkit-animation: Animate90 5s;
+    -moz-animation: Animate90 5s;
+    -o-animation: Animate90 5s;
     width: 90%;
     height: 50px;
     position: absolute;
@@ -453,10 +460,10 @@ section.SK div.text-container h1{
 }
 
 #Skill-C {
-    animation: Animate-C 4s;
-    -webkit-animation: Animate-C 4s;
-    -moz-animation: Animate-C 4s;
-    -o-animation: Animate-C 4s;
+    animation: Animate30 4s;
+    -webkit-animation: Animate30 4s;
+    -moz-animation: Animate30 4s;
+    -o-animation: Animate30 4s;
     width: 30%;
     height: 50px;
     position: absolute;
@@ -464,10 +471,10 @@ section.SK div.text-container h1{
 }
 
 #Skill-PHP {
-    animation: Animate-PHP 4s;
-    -webkit-animation: Animate-PHP 4s;
-    -moz-animation: Animate-PHP 4s;
-    -o-animation: Animate-PHP 4s;
+    animation: Animate25 4s;
+    -webkit-animation: Animate25 4s;
+    -moz-animation: Animate25 4s;
+    -o-animation: Animate25 4s;
     width: 25%;
     height: 50px;
     position: absolute;
@@ -475,10 +482,10 @@ section.SK div.text-container h1{
 }
 
 #Skill-SQL {
-    animation: Animate-SQL 4s;
-    -webkit-animation: Animate-SQL 4s;
-    -moz-animation: Animate-SQL 4s;
-    -o-animation: Animate-SQL 4s;
+    animation: Animate70 4s;
+    -webkit-animation: Animate70 4s;
+    -moz-animation: Animate70 4s;
+    -o-animation: Animate70 4s;
     width: 70%;
     height: 50px;
     position: absolute;
@@ -510,6 +517,31 @@ to {
 to {
     width: 100%}
 }
+@keyframes Animate90 {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-webkit-keyframes Animate90 {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-moz-keyframes Animate90 {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-o-keyframes Animate90 {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}
 @keyframes Animate80 {
     from {
     width: 10px;
@@ -534,6 +566,56 @@ to {
 }
 to {
     width: 80%}
+}
+@keyframes Animate70 {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-webkit-keyframes Animate70 {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-moz-keyframes Animate70{
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-o-keyframes Animate70 {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}
+@keyframes Animate30 {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-webkit-keyframes Animate30 {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-moz-keyframes Animate30 {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-o-keyframes Animate30 {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
 }
 @keyframes Animate25 {
     from {
