@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;600&display=swap');
 
 @font-face {
     font-family: JFont;
@@ -305,7 +305,7 @@ span {
 section.Ap {
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #fff;
     color: #000000;
     display: flex;
@@ -316,7 +316,7 @@ section.Ap {
 
 section.Ap div.text-content {
     font-family: 'Roboto', sans-serif;
-    
+    margin: 0px 0px 200px 0px;
     font-size: 20px;
     width: 50%;
 }
@@ -695,17 +695,133 @@ to {
     }
 }
 
+section.CM .resaux{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.CM .button{
+    background-color: #fff;
+    color: #000000;
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    margin: 0 12px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+section.CM .button:hover{
+    width: 160px;
+}
+
+section.CM .button:nth-child(1):hover{
+    background-color: #382b94;
+    color: #fff;
+}
+section.CM .button:nth-child(2):hover{
+    background-color: #24292f;
+    color: #f5f5f5;
+}
+section.CM .button:nth-child(3):hover{
+    background: linear-gradient(to right, hsl(37,97%,70%),hsl(329,70%,58%));
+    color: #fff;
+}
+section.CM .button:nth-child(4):hover{
+    background-color: #1389bf;
+    color: #fff;
+}
+
+section.CM .button .s-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+section.CM .button .s-icon svg{
+    width: 24px;
+    height: 24px;
+}
 
 
+section.CM .button .s-icon span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
 
+section.Pr {
+    width: 100%;
+    background-color: #fff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 200px 0px;
+}
 
+section.Pr  h1{
+    margin: 50px 0px 50px 25px;
+    font-size: 150px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: JFont;
+}
 
+section.Pr .project-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+section.Pr .project-container .box{
+    font-family: 'Roboto', sans-serif;
+    width: 30%;
+    min-width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.349) 0px 2px 4px;
+}
 
+section.Pr .project-container .box:nth-child(1){
+    background-color: #382b94;
+    color: #fff;
+}
 
+section.Pr .project-container .box h1{
+    font-size: 100px;
+    margin: 0;
+    font-weight: bold;
+    font-family: JFont;
+}
 
-
-section.ap-content {
-    background-color: #5b5b5b;
-    height: 1000px;
+section.Pr .project-container .box a{
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
