@@ -702,6 +702,7 @@ section.Pr {
     display: flex;
     flex-direction: column;
     padding: 200px 0px;
+    overflow: hidden;
 }
 
 section.Pr  h1{
@@ -908,6 +909,7 @@ section.CM h1{
 }
 
 footer {
+    width: 100%;
     min-height: 150px;
     height: auto;
     background-color: #000000;
@@ -915,13 +917,11 @@ footer {
     flex-direction: column;
     padding: 50px 50px 10px 50px;
     border-top: 5px solid #fff;
-    width: 100%;
     justify-content: center;
     text-align: center;
 }
 
 footer div{
-    width: 100%;
     text-align: left;
 }
 
