@@ -791,7 +791,9 @@ section.CM .container{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
+    background-color: #ffffff;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 12px 28px 0px, rgba(255, 255, 255, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    
 }
 
 section.CM .resaux{
@@ -817,12 +819,12 @@ section.CM h1{
     display: inline-block;
     height: 60px;
     width: 60px;
-    margin: 0 5px;
+    margin: 15px;
     overflow: hidden;
     background: #fff;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 12px 28px 0px, rgba(255, 255, 255, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;
     transition: all 0.3s ease-out;
 }
   
@@ -905,3 +907,49 @@ section.CM h1{
     color: #0d6b10;
 }
 
+footer {
+    min-height: 150px;
+    height: auto;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 10px 50px;
+    border-top: 5px solid #fff;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+footer div{
+    width: 100%;
+    text-align: left;
+}
+
+footer div span.lettre{
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: JFont;
+}
+
+footer p{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    margin-top: 25px;
+}
+
+footer div span.lettre:nth-child(1){
+    animation-delay: 0.1s;
+}
+footer div span.lettre:nth-child(2){
+    animation-delay: 0.2s;
+}
+footer div span.lettre:nth-child(3){
+    animation-delay: 0.3s;
+}
+footer div span.lettre:nth-child(4){
+    animation-delay: 0.4s;
+}
+footer div span.lettre:nth-child(5){
+    animation-delay: 0.5s;
+}
