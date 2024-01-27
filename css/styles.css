@@ -693,6 +693,9 @@ to {
     #SkillBox {
         width: 90%;  
     }
+    section.SK div.text-container h1{
+        font-size: 100px;
+    }
 }
 
 section.Pr {
@@ -770,6 +773,12 @@ section.Pr .project-container .box a{
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    section.Pr  h1{
+        font-size: 100px;
+    }
 }
 
 section.CM{
@@ -908,8 +917,14 @@ section.CM h1{
     color: #0d6b10;
 }
 
+@media screen and (max-width: 480px) {
+    section.CM h1{
+        font-size: 100px;
+    }
+}
+
 footer {
-    width: 100%;
+    width: auto;
     min-height: 150px;
     height: auto;
     background-color: #000000;
