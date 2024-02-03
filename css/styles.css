@@ -140,6 +140,7 @@ header div.arrow a svg{
 
 span {
     font-size: 500px;
+    font-style: italic;
     font-weight: bold;
     font-family: JFont;
 }
