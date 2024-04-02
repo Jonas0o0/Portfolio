@@ -715,7 +715,7 @@ section.Pr  h1{
     font-family: JFont;
 }
 
-section.Pr .project-container{
+section.Pr .project-container, section.Pr .concour-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -723,7 +723,8 @@ section.Pr .project-container{
     justify-content: space-evenly;
 }
 
-section.Pr .project-container .box{
+
+section.Pr .project-container .box, .concour-container  .box{
     font-family: 'Roboto', sans-serif;
     width: 30%;
     min-width: 300px;
@@ -744,25 +745,26 @@ section.Pr .project-container .box:nth-child(1), section.Pr .project-container .
     color: #fff;
 }
 
-section.Pr .project-container .box:nth-child(2), section.Pr .project-container .box:nth-child(2) a{
+section.Pr .concour-container .box:nth-child(1), section.Pr .concour-container .box:nth-child(1) a{
     position: relative;
-    background-color: #ffffff;
-    color: #000000;
+    /**background-color: #000000;**/
+    background-image: url('https://img.freepik.com/photos-premium/fond-noir-points-blancs-points-dessus_662214-30678.jpg');
+    color: #FFD500;
 }
 
-section.Pr .project-container .box a:hover::after{
+section.Pr .project-container .box a:hover::after, section.Pr .concour-container .box a:hover::after{
     width: 100%;
     left: 0;
 }
 
-section.Pr .project-container .box h1{
+section.Pr .project-container .box h1, section.Pr .concour-container .box h1{
     font-size: 100px;
     margin: 0;
     font-weight: bold;
     font-family: JFont;
 }
 
-section.Pr .project-container .box a{
+section.Pr .project-container .box a, section.Pr .concour-container .box a{
     text-align: center;
     text-decoration: none;
     padding: 5px;
