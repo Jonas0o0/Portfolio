@@ -745,7 +745,7 @@ section.Pr .project-container .box:nth-child(1), section.Pr .project-container .
     color: #fff;
 }
 
-section.Pr .concour-container .box:nth-child(1), section.Pr .concour-container .box:nth-child(1) a{
+section.Pr .concour-container .box:nth-child(1), section.Pr .concour-container .box:nth-child(1) a,section.Pr .concour-container .box:nth-child(4), section.Pr .concour-container .box:nth-child(4) a{
     position: relative;
     /**background-color: #000000;**/
     background-image: url('https://img.freepik.com/photos-premium/fond-noir-points-blancs-points-dessus_662214-30678.jpg');
