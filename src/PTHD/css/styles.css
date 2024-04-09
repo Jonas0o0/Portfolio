@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: JFont;
-    src: url(../assets/Fonts/Thunder-VF.ttf);
+    src: url(../../../assets/Fonts/Thunder-VF.ttf);
 }
 
 *{
@@ -17,8 +17,9 @@ html {
 }
 
 body {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto';
 }
 body::after{
     content: '';
@@ -289,4 +290,87 @@ span {
         width: 100%;
         left: 0;
     }
+}
+
+section {
+    width: 100%;
+    padding: 50px 0px 130px 0px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+section div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: JFont;
+}
+
+section p{
+ margin: 50px;    
+}
+
+section table{
+    text-align: center;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+section table, td, th {
+    border: 1px solid;
+    padding: 5px;
+}
+
+footer {
+    width: auto;
+    min-height: 150px;
+    height: auto;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 10px 50px;
+    border-top: 5px solid #fff;
+    justify-content: center;
+    text-align: center;
+}
+
+footer div{
+    text-align: left;
+}
+
+footer div span.lettre{
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: JFont;
+}
+
+footer p{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    margin-top: 25px;
+}
+
+footer div span.lettre:nth-child(1){
+    animation-delay: 0.1s;
+}
+footer div span.lettre:nth-child(2){
+    animation-delay: 0.2s;
+}
+footer div span.lettre:nth-child(3){
+    animation-delay: 0.3s;
+}
+footer div span.lettre:nth-child(4){
+    animation-delay: 0.4s;
+}
+footer div span.lettre:nth-child(5){
+    animation-delay: 0.5s;
 }

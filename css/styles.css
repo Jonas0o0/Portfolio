@@ -17,8 +17,8 @@ html {
 }
 
 body {
-    background-color: #000000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
 }
 body::after{
     content: '';
@@ -103,6 +103,11 @@ nav ul a::after{
 nav ul li:hover a:after{
     width: 100%;
     left: 0;
+}
+
+header{
+    color: #ffffff;
+    background-color: #000000;
 }
 
 header div.main-content {
@@ -305,7 +310,7 @@ section.Ap {
     overflow: hidden;
     width: 100%;
     min-height: 100vh;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #000000;
     display: flex;
     flex-direction: column;
@@ -350,6 +355,8 @@ section.Ap  h1{
 }
 
 section.SK {
+    color: #ffffff;
+    background-color: #000000;
     overflow: hidden;
     width: 100%;
     display: flex;
@@ -703,7 +710,7 @@ section.Pr {
     color: #000000;
     display: flex;
     flex-direction: column;
-    padding: 200px 0px;
+    padding: 50px 0px;
     overflow: hidden;
 }
 
@@ -785,11 +792,12 @@ section.Pr .project-container .box a, section.Pr .concour-container .box a{
 section.CM{
     width: 100%;
     background-color: #000000;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
 }
 
 section.CM .container{
@@ -929,6 +937,7 @@ footer {
     min-height: 150px;
     height: auto;
     background-color: #000000;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     padding: 50px 50px 10px 50px;
@@ -942,6 +951,7 @@ footer div{
 }
 
 footer div span.lettre{
+    color: #ffffff;
     font-size: 100px;
     font-style: italic;
     font-weight: bold;

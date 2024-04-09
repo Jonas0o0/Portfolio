@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section.box{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.black {
+    color: #fff;
+    background-color: #000;
+}
+
+section.white {
+    color: #000;
+    background-color: #fff;
+}
+
