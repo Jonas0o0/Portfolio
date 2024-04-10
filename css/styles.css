@@ -364,7 +364,7 @@ section.SK {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 15% 0;
+    padding: 15% 0px;
     height: auto;
     font-family: 'Roboto', sans-serif;
 }
