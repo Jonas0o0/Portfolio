@@ -358,19 +358,3 @@ footer p{
     text-decoration: underline;
     margin-top: 25px;
 }
-
-footer div span.lettre:nth-child(1){
-    animation-delay: 0.1s;
-}
-footer div span.lettre:nth-child(2){
-    animation-delay: 0.2s;
-}
-footer div span.lettre:nth-child(3){
-    animation-delay: 0.3s;
-}
-footer div span.lettre:nth-child(4){
-    animation-delay: 0.4s;
-}
-footer div span.lettre:nth-child(5){
-    animation-delay: 0.5s;
-}
