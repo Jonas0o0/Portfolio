@@ -8,6 +8,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 html {
@@ -736,7 +737,7 @@ section.Pr .project-container .box, .concour-container  .box{
     width: 30%;
     min-width: 300px;
     height: auto;
-    min-height: 500px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -759,9 +760,16 @@ section.Pr .concour-container .box:nth-child(1), section.Pr .concour-container .
     color: #FFD500;
 }
 
-section.Pr .project-container .box a:hover::after, section.Pr .concour-container .box a:hover::after{
-    width: 100%;
-    left: 0;
+section.Pr .project-container .box .image{
+    width: 200px;
+    height: 200px;
+    background-color: #31313169;
+    border-radius: 200px;
+    margin-bottom: 10px;
+}
+
+section.Pr .project-container .box .image.carre{
+    border-radius: 0px;
 }
 
 section.Pr .project-container .box h1, section.Pr .concour-container .box h1{
